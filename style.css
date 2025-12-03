@@ -1,0 +1,447 @@
+
+:root {
+  --brand: #bd0c32;
+  --text: #1a2b4a;
+  --muted: #475569;
+  --bg: #d4dce4;
+  --white: #fff;
+
+  --radius: 12px;
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 999;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 8px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #bd0c32;
+}
+
+.small {
+  font-size: 0.8rem;
+  color: #526375;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a:hover {
+  color: var(--brand);
+}
+
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.social-icons img {
+  width: 28px;
+  height: 28px;
+}
+
+
+main {
+  margin-top: 120px;
+}
+
+.hero-card {
+  background: var(--white);
+  padding: 40px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.hero-card h1 {
+  font-size: 2rem;
+  color: var(--brand);
+}
+
+.hero-card p {
+  max-width: 600px;
+  margin: 12px auto 24px;
+  color: var(--muted);
+}
+
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin: 20px 0 30px;
+}
+
+.service {
+  background: #fff;
+  padding: 18px;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  transition: 0.2s;
+}
+
+.service:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.btn-cta {
+  display: inline-block;
+  background: var(--brand);
+  color: white;
+  padding: 10px 22px;
+  border-radius: var(--radius);
+  font-weight: 600;
+}
+
+.btn-cta:hover {
+  filter: brightness(1.1);
+}
+
+
+section {
+  margin: 80px 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 22px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: 600;
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: var(--radius);
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+  background: #fff;
+}
+
+textarea {
+  min-height: 110px;
+}
+
+
+footer {
+  background: #1d1d1d;
+  padding: 28px 0;
+  text-align: center;
+}
+
+footer p {
+  color: #ddd;
+  font-size: 0.9rem;
+}
+
+
+
+.vantagens {
+  text-align: center;
+  padding: 80px 20px;
+  background: #ffffff;
+  border-radius: 30px;
+}
+
+.vantagens h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #bd0c32
+}
+
+.vantagens-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.vantagem {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: 0.2s;
+}
+
+.vantagem:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.15);
+}
+
+.vantagem img {
+  width: 80px;   
+  margin-bottom: 20px;
+}
+
+.vantagem h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.vantagem p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.faixa-historia {
+  position: relative;
+  width: 100%;
+  height: 900px; 
+  overflow: hidden;
+}
+
+.faixa-historia img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+
+.centro-textos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.desde {
+  font-size: 4rem;      
+  font-weight: 800;
+  background: #b80000;
+  padding: 15px 35px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 120px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+.atendimento {
+  font-size: 2.5rem;    
+  font-weight: 600;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+
+.footer {
+  background: #bd0c32;
+  color: white;
+  padding: 50px 0 20px;
+  margin-top: 60px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+.footer-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.footer-item p {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+
+
+@media (max-width: 768px) {
+
+  nav ul {
+    display: none;
+  }
+
+  .hero-card {
+    padding: 28px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .vantagens-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .vantagens-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== HEADER MOBILE ORGANIZADO EM DUAS COLUNAS ===== */
+@media (max-width: 768px) {
+
+  header {
+    padding: 10px 14px;
+  }
+
+  /* Linha 1: Logo + Nome + Redes Sociais */
+  .brand-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .brand img {
+    width: 42px;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+
+  /* MENU EM DUAS COLUNAS */
+  nav ul {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr; /* DUAS COLUNAS */
+    gap: 6px 16px; /* linha - coluna */
+    margin-top: 12px;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  nav ul li {
+    list-style: none;
+  }
+
+  nav ul li a {
+    display: block;
+    text-align: left;
+    font-size: 1rem;
+    padding: 4px 0;
+  }
+}
+
+.brand img {
+  width: 55px;          /* aumenta um pouco */
+  height: auto;         /* mantém a proporção natural (NÃO deforma) */
+  object-fit: contain;  /* garante que nada corte ou aperte */
+}
