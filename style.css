@@ -388,14 +388,12 @@ footer p {
   }
 }
 
-/* ===== HEADER MOBILE ORGANIZADO EM DUAS COLUNAS ===== */
 @media (max-width: 768px) {
 
   header {
     padding: 10px 14px;
   }
 
-  /* Linha 1: Logo + Nome + Redes Sociais */
   .brand-area {
     display: flex;
     align-items: center;
@@ -418,11 +416,10 @@ footer p {
     gap: 10px;
   }
 
-  /* MENU EM DUAS COLUNAS */
   nav ul {
     display: grid !important;
-    grid-template-columns: 1fr 1fr; /* DUAS COLUNAS */
-    gap: 6px 16px; /* linha - coluna */
+    grid-template-columns: 1fr 1fr; 
+    gap: 6px 16px; 
     margin-top: 12px;
     width: 100%;
     padding-left: 0;
@@ -441,7 +438,8 @@ footer p {
 }
 
 .brand img {
-  width: 55px;          /* aumenta um pouco */
-  height: auto;         /* mantém a proporção natural (NÃO deforma) */
-  object-fit: contain;  /* garante que nada corte ou aperte */
+  width: 55px;          
+  height: auto;         
+  object-fit: contain;  
 }
+
